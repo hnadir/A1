@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<head>
+<title>ABC! - Learn</title>
+<style>
+
+* {
+    box-sizing: border-box;
+	padding: 0;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+body{cursor: default;}
+
+@font-face {
+    font-family: test1;
+    src: url(abc.ttf);
+}
+
+@font-face {
+    font-family: test2;
+    src: url(Schoolbell.ttf);
+}
+
+.test1{
+    font-family: test1;
+	font-size: 250px;
+}
+
+.test2{
+    font-family: test2;
+	font-size: 200px;
+}
+
+.test2a{
+    font-family: test2;
+	font-size: 185px;
+}
+
+.test3{
+    font-family: test2;
+	font-size: 60px;
+	font-weight: bold;
+	padding-left: 10px;
+	font-color: purple;
+}
+
+#octagon {
+	width: 300px;
+	height: 300px;
+	background: black;
+	position: relative;
+}
+
+#octagon:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-top: 25px solid green;
+	border-bottom: 87px solid black;
+	border-left: 87px solid green;
+	border-right: 87px solid green;
+	width: 126px;
+	height: 0;
+}
+
+#octagon:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-bottom: 25px solid green;
+	border-top: 87px solid black;
+	border-left: 87px solid green;
+	border-right: 87px solid green;
+	width: 126px;
+	height: 0;
+}
+	
+#image div{
+			display: none;
+		}
+
+#image div:target {
+			display: block;
+		}
+		
+@-ms-keyframes wiggle{0%{-ms-transform:rotate(5deg);}50%{-ms-transform:rotate(-5deg);}100%{-ms-transform:rotate(5deg);}}
+@-moz-keyframes wiggle{0%{-moz-transform:rotate(5deg);}50%{-moz-transform:rotate(-5deg);}100%{-moz-transform:rotate(5deg);}}
+@-webkit-keyframes wiggle{0%{-webkit-transform:rotate(5deg);}50%{-webkit-transform:rotate(-5deg);}100%{-webkit-transform:rotate(5deg);}}
+@keyframes wiggle{0%{transform:rotate(5deg);}50%{transform:rotate(-5deg);}100%{transform:rotate(5deg);}}
+div.wiggle-me:hover{-ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webkit-animation:wiggle .3s 2;animation:wiggle .3s 2;}
+p.wiggle-me:hover{-ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webkit-animation:wiggle .3s 2;animation:wiggle .3s 2;}
+
+a{
+  color: inherit;
+  text-decoration:none;
+  cursor: default;
+  }
+</style>
+
+<audio autoplay loop>
+      <source src="happy.ogg">
+      <source src="happy.mp3">
+  </audio>
+</head>
+
+<body style="background-color:orange; width:100%;"> 
+<div>
+	<div style="width:100%; height:50px;">
+	<header class="test3" style="float:left; height:50px; width:80%"> Let's learn the Alphabet!</header>
+	<p class="test3 wiggle-me" style="float:left; width:20%; height:50px;"><a href="Home.html">
+		<font color="red">H</font><font color="green">O</font><font color="yellow">M</font><font color="purple">E</font>
+	</a></p>
+	</div>
+	
+	<nav class="test3" style="height:80px; width:100%; ">
+		<a href="#aa"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> A</div></a>
+		<a href="#bb"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> B</div></a>
+		<a href="#cc"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> C</div></a>
+		<a href="#dd"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> D</div></a>
+		<a href="#ee"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> E</div></a>
+		<a href="#ff"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> F</div></a>
+		<a href="#gg"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> G</div></a>
+		<a href="#hh"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> H</div></a>
+		<a href="#ii"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> I</div></a>
+		<a href="#jj"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> J</div></a>
+		<a href="#kk"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> K</div></a>
+		<a href="#ll"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> L</div></a>
+		<a href="#mm"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> M</div></a>
+	</nav>
+	
+	<nav class="test3" style="height:80px; width:100%;">
+		<a href="#nn"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> N</div></a>
+		<a href="#oo"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> O</div></a>
+		<a href="#pp"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> P</div></a>
+		<a href="#qq"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> Q</div></a>
+		<a href="#rr"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> R</div></a>
+		<a href="#ss"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> S</div></a>
+		<a href="#tt"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> T</div></a>
+		<a href="#uu"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> U</div></a>
+		<a href="#vv"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> V</div></a>
+		<a href="#ww"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> W</div></a>
+		<a href="#xx"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> X</div></a>
+		<a href="#yy"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> Y</div></a>
+		<a href="#zz"><div class="wiggle-me" style="float:left; width:7.69%; height: 80px;"> Z</div></a>
+	</nav>
+	<div style="height:80px; width:100%; background-color:orange;"></div>
+	
+	<div id="image" style="background-color: orange; float:left; width:100%; height:350px;">
+	
+		<div id="aa" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="text-align:center; float:left; width:20%; height:320px; background-color:red">A</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> A </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Apple</p>
+		</div>	
+		
+		<div id="bb" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">B</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> B </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Ball</p>
+		</div>
+		
+		<div id="cc" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">C</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> T </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Cup</p>
+		</div>
+		
+		<div id="dd" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">D</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> d </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Dinosaur</p>
+		</div>
+		
+		<div id="ee" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">E</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> e </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Elephant</p>
+		</div>
+		
+		<div id="ff" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">F</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> F </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Fish</p>
+		</div>
+		
+		<div id="gg" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">G</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> g </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Guitar</p>
+		</div>
+		
+		<div id="hh" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">H</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> h </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Hat</p>
+		</div>
+		
+		<div id="ii" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">I</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> i </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Island</p>
+		</div>
+		
+		<div id="jj" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">J</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> J </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Jacket</p>
+		</div>
+		
+		<div id="kk" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">K</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> m </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Knife</p>
+		</div>
+		
+		<div id="ll" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">L</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> l </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Ladder</p>
+		</div>
+		
+		<div id="mm" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">M</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> M </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Mouse</p>
+		</div>
+		
+		<div id="nn" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">N</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> N </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Needle</p>
+		</div>
+		
+		<div id="oo" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">O</p>
+			<p style="float:left; width:19px ; height:320px; background-color:green"></p>
+			<p class="wiggle-me" id="octagon" style="float:left; width:300px; height:320px; background-color:black"></p>
+			<p style="float:left; width:19px ; height:320px; background-color:green"></p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Octagon</p>
+		</div>
+		
+		<div id="pp" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">P</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> P </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Parcel</p>
+		</div>
+		
+		<div id="qq" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">Q</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> V </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Quail</p>
+		</div>
+		
+		<div id="rr" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">R</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> n </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Rhino</p>
+		</div>
+		
+		<div id="ss" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">S</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> S </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Saw</p>
+		</div>
+		
+		<div id="tt" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">T</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> t </p>
+			<p align="center" class="test2a" style="float:left; width:55%; height:320px; background-color:yellow">Telephone</p>
+		</div>
+		
+		<div id="uu" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">U</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> R </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Umbrella</p>
+		</div>
+		
+		<div id="vv" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">V</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> v </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Vase</p>
+		</div>
+		
+		<div id="ww" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">W</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> w </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Weights</p>
+		</div>
+		
+		<div id="xx" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">X</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> x </p>
+			<p align="center" class="test2a" style="float:left; width:55%; height:320px; background-color:yellow">Xylophone</p>
+		</div>
+		
+		<div id="yy" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">Y</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> Y </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Yatch</p>
+		</div>
+		
+		<div id="zz" class="test2" style="background-color: orange; float:left; width:100%; height: 180px;">
+			<p align="center" style="float:left; width:20%; height:320px; background-color:red">Z</p>
+			<p align="center" class="test1 wiggle-me" style="float:left; width:25%; height:320px; background-color:green"> z </p>
+			<p align="center" style="float:left; width:55%; height:320px; background-color:yellow">Zebra</p>
+		</div>
+	
+	</div>
+	
+</div>
+</body>
